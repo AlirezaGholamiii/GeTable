@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/activity_homeRestaurant" android:title="Restaurant" android:icon="@drawable/ic_restaurant" />
+    <item android:id="@+id/activity_reserved" android:title="Reserved" android:icon="@drawable/ic_calendar" />
+    <item android:id="@+id/activity_mapsearch" android:title="Map" android:icon="@drawable/ic_map"/>
+    <item android:id="@+id/activity_profileTab" android:title="Profile" android:icon="@drawable/ic_profile" />
+</menu>
