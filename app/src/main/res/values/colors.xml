@@ -11,4 +11,5 @@
     <color name="button">#2D1902</color>
     <color name="grayText">#747474</color>
     <color name="PlaceholderText">#CCCCCC</color>
+    <color name="lightGray">#DCDCDC</color>
 </resources>

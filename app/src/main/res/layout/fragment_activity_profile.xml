@@ -60,7 +60,7 @@
 
 
     <RelativeLayout
-        android:id="@+id/relative_phone"
+        android:id="@+id/relative_Email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/relative_name"
@@ -70,29 +70,29 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginStart="70dp">
+            android:layout_marginStart="70dp"
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Phone"
-                android:textSize="12sp"/>
+                android:textSize="12sp" />
 
             <TextView
                 android:id="@+id/phone_profile"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="+91-999999999"
-                android:textSize="26sp"
-                android:textColor="@color/black"/>
+                android:text="Maria@gmail.com"
+                android:textColor="@color/black"
+                android:textSize="26sp" />
 
         </LinearLayout>
 
     </RelativeLayout>
 
     <View
-        android:layout_below="@+id/relative_phone"
+        android:layout_below="@+id/relative_Email"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@color/background"/>
@@ -112,7 +112,7 @@
         android:clickable="true"
         android:focusable="true"
         android:background="?attr/selectableItemBackground"
-        android:layout_below="@id/relative_phone"
+        android:layout_below="@id/relative_Email"
         android:paddingVertical="10dp">
 
         <LinearLayout
