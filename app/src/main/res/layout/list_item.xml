@@ -14,13 +14,13 @@
             android:layout_marginVertical="10dp"
             android:orientation="horizontal">
 
+
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/profile_pic"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:layout_marginStart="20dp"
-                android:src="@drawable/third_restaurant"/>
-
+                android:src="@drawable/third_restaurant" />
 
             <LinearLayout
                 android:layout_width="wrap_content"

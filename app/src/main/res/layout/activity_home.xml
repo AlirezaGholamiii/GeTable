@@ -30,9 +30,9 @@
         android:layout_width="413dp"
         android:layout_height="381dp"
         app:srcCompat="@drawable/homepic"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="29dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-18dp"
+        tools:layout_editor_absoluteY="0dp" />
 
     <TextView
         android:id="@+id/tvListHeading"
