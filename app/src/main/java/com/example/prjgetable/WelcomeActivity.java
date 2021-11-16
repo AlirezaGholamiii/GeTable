@@ -34,7 +34,7 @@ public class WelcomeActivity extends AppCompatActivity implements View.OnClickLi
        int id = view.getId();
         switch (id){
             case R.id.btnSignUp: {
-                Intent intent = new Intent(this, activity_reservation_time.class);
+                Intent intent = new Intent(this, activity_table_selection.class);
                 startActivity(intent);
             }
             break;
