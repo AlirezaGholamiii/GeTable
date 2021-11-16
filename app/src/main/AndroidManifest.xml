@@ -16,6 +16,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PrjGeTable">
         <activity
+            android:name=".activity_table_selection"
+            android:exported="false" />
+        <activity
+            android:name=".activity_reservation_time"
+            android:exported="false" />
+        <activity
             android:name=".activity_restaurant_profile"
             android:exported="false" />
         <!--
