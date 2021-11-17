@@ -16,6 +16,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PrjGeTable">
         <activity
+            android:name=".activity_reservation_confirmation"
+            android:exported="false" />
+        <activity
             android:name=".activity_table_selection"
             android:exported="false" />
         <activity
