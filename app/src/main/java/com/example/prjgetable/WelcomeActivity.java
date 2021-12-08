@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 public class WelcomeActivity extends AppCompatActivity implements View.OnClickListener{
 
-    Button btnSignUp;
+    Button btnSignUp,wLogin;
 
 
     @Override
@@ -31,6 +31,8 @@ public class WelcomeActivity extends AppCompatActivity implements View.OnClickLi
 
         btnSignUp = findViewById(R.id.btnSignUp);
         btnSignUp.setOnClickListener(this);
+        wLogin = findViewById(R.id.btnLogin);
+        wLogin.setOnClickListener(this);
     }
 
     @Override
@@ -38,10 +40,15 @@ public class WelcomeActivity extends AppCompatActivity implements View.OnClickLi
        int id = view.getId();
         switch (id){
             case R.id.btnSignUp: {
-                Intent intent = new Intent(this, activity_reservation_confirmation.class);
+                Intent intent = new Intent(this, SignUpActivity.class);
                 startActivity(intent);
             }
             break;
+            case R.id.btnLogin:{
+
+                Intent intent = new Intent(this, activity_login.class);
+                startActivity(intent);
+            }
         }
 
     }

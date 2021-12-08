@@ -4,16 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity_restaurant_profile">
+    tools:context=".res_profile2">
 
 
     <TextView
-        android:id="@+id/restaurantName"
+        android:id="@+id/restaurantName1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:paddingTop="25dp"
         android:text="Restaurant's Name"
+
 
         android:textAlignment="center"
         android:textColor="@color/background"
@@ -26,13 +27,13 @@
         />
 
     <TextView
-        android:id="@+id/restaurantType"
+        android:id="@+id/restaurantType1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:paddingTop="100dp"
         android:text="Restaurant Type"
-        app:layout_constraintTop_toBottomOf="@id/restaurantName"
+        app:layout_constraintTop_toBottomOf="@id/restaurantName1"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -40,7 +41,7 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/type"
+        android:id="@+id/type1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -51,17 +52,17 @@
         android:text=""
         android:textColor="@color/grayText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintLeft_toLeftOf="@+id/restaurantType"
+        app:layout_constraintLeft_toLeftOf="@+id/restaurantType1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/restaurantType" />
+        app:layout_constraintTop_toBottomOf="@+id/restaurantType1" />
 
     <TextView
-        android:id="@+id/restaurantDescription"
+        android:id="@+id/restaurantDescription1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Description"
         android:paddingTop="10dp"
-        app:layout_constraintTop_toBottomOf="@+id/type"
+        app:layout_constraintTop_toBottomOf="@+id/type1"
         app:layout_constraintLeft_toLeftOf="parent"
         android:textSize="20sp"
         android:textColor="@color/black"
@@ -69,7 +70,7 @@
         />
 
     <TextView
-        android:id="@+id/Description"
+        android:id="@+id/Description1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -79,17 +80,17 @@
         android:paddingLeft="15dp"
         android:text=""
         android:textColor="@color/grayText"
-        app:layout_constraintLeft_toLeftOf="@+id/restaurantDescription"
-        app:layout_constraintTop_toBottomOf="@+id/restaurantDescription"
+        app:layout_constraintLeft_toLeftOf="@+id/restaurantDescription1"
+        app:layout_constraintTop_toBottomOf="@+id/restaurantDescription1"
         />
 
     <TextView
-        android:id="@+id/restaurantOffer"
+        android:id="@+id/restaurantOffer1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Restaurant Offer"
         android:paddingTop="10dp"
-        app:layout_constraintTop_toBottomOf="@+id/Description"
+        app:layout_constraintTop_toBottomOf="@+id/Description1"
         app:layout_constraintLeft_toLeftOf="parent"
         android:textSize="20sp"
         android:textColor="@color/black"
@@ -97,7 +98,7 @@
         />
 
     <TextView
-        android:id="@+id/Offer"
+        android:id="@+id/Offer1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -107,44 +108,46 @@
         android:paddingLeft="15dp"
         android:text=""
         android:textColor="@color/grayText"
-        app:layout_constraintLeft_toLeftOf="@+id/restaurantOffer"
-        app:layout_constraintTop_toBottomOf="@+id/restaurantOffer"
+        app:layout_constraintLeft_toLeftOf="@+id/restaurantOffer1"
+        app:layout_constraintTop_toBottomOf="@+id/restaurantOffer1"
         />
 
     <Button
-        android:id="@+id/btnRequestTable"
+        android:id="@+id/btnRequestTable1"
         style="@style/btnBarrown"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="180dp"
+        android:layout_marginTop="200dp"
         android:ems="22"
         android:text="Request A Table"
-        app:layout_constraintStart_toStartOf="@+id/Offer"
-        app:layout_constraintTop_toBottomOf="@id/Offer"
+        app:layout_constraintStart_toStartOf="@+id/Offer1"
+        app:layout_constraintTop_toBottomOf="@id/Offer1"
 
         />
 
     <EditText
-        android:id="@+id/edDate"
+        android:id="@+id/edDate1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="120dp"
         android:ems="10"
         android:hint="Date(XXXX-XX-XX)"
         app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintLeft_toLeftOf="@+id/restaurantOffer"
-        app:layout_constraintTop_toBottomOf="@+id/restaurantOffer" />
+        app:layout_constraintLeft_toLeftOf="@+id/restaurantOffer1"
+        app:layout_constraintTop_toBottomOf="@+id/restaurantOffer1"
+        />
 
 
     <TextView
-        android:id="@+id/tvShowUser"
+        android:id="@+id/tvShowUser1"
         android:layout_width="347dp"
         android:layout_height="54dp"
-        android:text=""
+        android:text="....."
+        android:layout_marginTop="100dp"
         tools:layout_editor_absoluteX="19dp"
         tools:layout_editor_absoluteY="72dp"
         tools:ignore="MissingConstraints"
-        app:layout_constraintBottom_toTopOf="@+id/type"
+        app:layout_constraintBottom_toTopOf="@+id/type1"
         android:layout_marginBottom="40dp"
         />
 
@@ -159,18 +162,18 @@
 
         tools:layout_editor_absoluteX="26dp"
         tools:layout_editor_absoluteY="453dp"
-        app:layout_constraintLeft_toLeftOf="@+id/restaurantOffer"
-        app:layout_constraintTop_toBottomOf="@+id/restaurantOffer"/>
+        app:layout_constraintLeft_toLeftOf="@+id/restaurantOffer1"
+        app:layout_constraintTop_toBottomOf="@+id/restaurantOffer1"/>
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/editTextTextPersonName1"
         android:layout_width="285dp"
         android:layout_height="62dp"
         android:layout_marginTop="180dp"
         android:ems="10"
         android:hint="Enter your Offical Name"
         android:inputType="textPersonName"
-        app:layout_constraintLeft_toLeftOf="@+id/restaurantOffer"
+        app:layout_constraintLeft_toLeftOf="@+id/restaurantOffer1"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/restaurantOffer" />
+        app:layout_constraintTop_toBottomOf="@+id/restaurantOffer1" />
 </androidx.constraintlayout.widget.ConstraintLayout>

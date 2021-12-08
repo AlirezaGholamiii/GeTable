@@ -47,7 +47,8 @@
         android:inputType="text"
         android:minHeight="48dp"
         android:paddingLeft="15dp"
-        android:text="Enter Email..."
+        android:hint="Enter Email..."
+        android:text="test3@"
         android:textColor="@color/PlaceholderText"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -79,7 +80,8 @@
         android:inputType="text"
         android:minHeight="48dp"
         android:paddingLeft="15dp"
-        android:text="Enter Password..."
+        android:hint="Enter Password..."
+        android:text="1111"
         android:textColor="@color/PlaceholderText"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -97,20 +99,6 @@
         android:layout_marginTop="60dp"
         android:ems="22"
         style="@style/btnTransparent"
-
-        />
-
-    <Button
-        android:id="@+id/tvForgetPass"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="FORGOT PASSWORD?"
-        app:layout_constraintStart_toStartOf="@+id/tvLogin"
-        app:layout_constraintTop_toBottomOf="@id/tvLogin"
-        android:layout_marginTop="15dp"
-        android:ems="22"
-        android:backgroundTint="@color/white"
-        android:textColor="@color/grayText"
 
         />
 

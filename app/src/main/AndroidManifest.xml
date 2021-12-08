@@ -16,17 +16,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PrjGeTable">
         <activity
+            android:name=".res_profile3"
+            android:exported="false" />
+        <activity
             android:name=".activity_reservation_confirmation"
             android:exported="false" />
         <activity
-            android:name=".activity_table_selection"
-            android:exported="false" />
-        <activity
-            android:name=".activity_reservation_time"
-            android:exported="false" />
-        <activity
             android:name=".activity_restaurant_profile"
-            android:exported="false" />
+            android:exported="true" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -57,6 +54,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".res_profile2"
+            android:exported="true" />
     </application>
 
 </manifest>

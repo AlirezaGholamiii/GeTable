@@ -7,6 +7,38 @@
     tools:context=".SignUpActivity">
 
     <TextView
+        android:id="@+id/tvCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="100dp"
+        android:paddingTop="65dp"
+        android:hint="Country:"
+        android:textColor="@color/grayText"
+        android:textSize="20sp"
+
+        app:layout_constraintLeft_toLeftOf="@+id/edEmail"
+        app:layout_constraintTop_toBottomOf="@+id/tvPass" />
+
+    <EditText
+        android:id="@+id/edCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:background="@drawable/shapes"
+        android:ems="17"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:paddingLeft="15dp"
+        android:text="Enter full name..."
+        android:textColor="@color/PlaceholderText"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFullName" />
+
+    <TextView
         android:id="@+id/tvTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -46,7 +78,7 @@
         android:inputType="text"
         android:minHeight="48dp"
         android:paddingLeft="15dp"
-        android:text="Enter Email..."
+        android:hint="Enter Email..."
         android:textColor="@color/PlaceholderText"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -78,7 +110,7 @@
         android:inputType="text"
         android:minHeight="48dp"
         android:paddingLeft="15dp"
-        android:text="Enter Password..."
+        android:hint="Enter Password..."
         android:textColor="@color/PlaceholderText"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -111,7 +143,7 @@
         android:inputType="text"
         android:minHeight="48dp"
         android:paddingLeft="15dp"
-        android:text="Enter full name..."
+        android:hint="Enter full name..."
         android:textColor="@color/PlaceholderText"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -119,17 +151,16 @@
         app:layout_constraintTop_toBottomOf="@+id/tvFullName" />
 
 
-
     <Button
         android:id="@+id/tvSignUp"
+        style="@style/btnTransparent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="176dp"
+        android:ems="22"
         android:text="Suin Up"
         app:layout_constraintStart_toStartOf="@+id/edFullName"
         app:layout_constraintTop_toBottomOf="@id/edFullName"
-        android:layout_marginTop="60dp"
-        android:ems="22"
-        style="@style/btnTransparent"
 
         />
 

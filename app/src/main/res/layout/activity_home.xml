@@ -6,92 +6,73 @@
     android:layout_height="match_parent"
     tools:context=".activity_home">
 
-    <TextView
-        android:id="@+id/tvHeader"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@color/background"
-        android:height="80dp"
-        />
-
-    <ImageView
-        android:id="@+id/tvLogo"
-        android:layout_width="412dp"
-        android:layout_height="266dp"
-        app:layout_constraintLeft_toLeftOf="parent"
+    <Button
+        android:id="@+id/btnRes3"
+        android:layout_width="113dp"
+        android:layout_height="42dp"
+        android:text="Kwizinn"
+        android:textSize="10dp"
+app:layout_constraintLeft_toRightOf="@id/btnRes2"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="-90dp"
-        app:srcCompat="@drawable/getabe" />
+        app:layout_constraintBaseline_toBaselineOf="@id/btnRes1"
+        tools:layout_editor_absoluteX="261dp"
+        tools:layout_editor_absoluteY="607dp"
+        tools:ignore="MissingConstraints" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="413dp"
-        android:layout_height="381dp"
-        app:srcCompat="@drawable/homepic"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-18dp"
-        tools:layout_editor_absoluteY="0dp" />
+    <Button
+        android:id="@+id/btnRes2"
+        android:layout_width="113dp"
+        android:layout_height="42dp"
+        android:text="Antonietta"
+        android:textSize="10dp"
+        app:layout_constraintBaseline_toBaselineOf="@id/btnRes1"
+        app:layout_constraintLeft_toRightOf="@id/btnRes1"
+        app:layout_constraintRight_toLeftOf="@id/btnRes3"
 
-    <TextView
-        android:id="@+id/tvListHeading"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
-        android:layout_marginBottom="50dp"
-        android:background="@drawable/home_page_shapes"
-        android:backgroundTint="@color/white"
-        android:text="Near Restaurants"
-        android:textAlignment="center"
-        android:textSize="18dp"
-        android:textStyle="bold"
-        android:paddingTop="25dp"
-        android:textColor="@color/background"
-        android:height="110dp"
-        />
+        tools:ignore="MissingConstraints" />
+
+
 
     <ListView
         android:id="@+id/tvRestaurantList"
-        android:layout_width="match_parent"
-        android:layout_height="403dp"
-        tools:layout_editor_absoluteX="-2dp"
-        tools:layout_editor_absoluteY="328dp"
+        android:layout_width="411dp"
+        android:layout_height="322dp"
+        android:layout_marginBottom="140dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:listitem="@layout/list_item">
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp">
 
     </ListView>
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigationView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/white"
+    <Button
+        android:id="@+id/btnRes1"
+        android:layout_width="115dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="50dp"
+        android:text="Hélicoptère"
+        android:textSize="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:menu="@menu/bottom_navigation"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        >
-        <!--
-        <androidx.fragment.app.FragmentContainerView
-            android:id="@+id/fragment"
-            android:name="androidx.navigation.fragment.NavHostFragment"
-            app:defaultNavHost = "true"
-            app:navGraph = "@navigation/my_nav"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            />
-           -->
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/btnRes2"
 
+        tools:ignore="MissingConstraints" />
 
-        </com.google.android.material.bottomnavigation.BottomNavigationView>
+    <TextView
+        android:id="@+id/tvProfile"
+        android:layout_width="411dp"
+        android:layout_height="89dp"
+        android:textSize="30dp"
 
-
-
-
+        android:background="@drawable/home_page_shapes"
+        android:backgroundTint="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text=""
+        android:layout_marginTop="100dp"
+        android:textAlignment="center"
+        android:textColor="@color/background"
+ />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
